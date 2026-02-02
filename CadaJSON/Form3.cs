@@ -27,16 +27,20 @@ namespace CadaJSON
             // Optional: improve columns
             if (dataGridView1.Columns.Count > 0)
             {
-            dataGridView1.Columns["Identificador"]?.HeaderText = "ID";
-            dataGridView1.Columns["Nome"]?.HeaderText = "Nome";
-            dataGridView1.Columns["Telefone"]?.HeaderText = "Telefone";
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                dataGridView1.Columns["Identificador"]?.HeaderText = "ID";
+                dataGridView1.Columns["Nome"]?.HeaderText = "Nome";
+                dataGridView1.Columns["Telefone"]?.HeaderText = "Telefone";
+                dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             }
         }
         //
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AtualizarGrid();
         }
     }
 }
