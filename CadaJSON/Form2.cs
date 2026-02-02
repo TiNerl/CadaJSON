@@ -26,7 +26,7 @@ namespace CadaJSON
 
         private void textBox1_TextChanged(object sender, EventArgs e)   //Caixa input texto nome
         {
-
+            textBox1.MaxLength = 50; // Define o limite máximo de caracteres para o campo 
         }
 
         private void label3_Click(object sender, EventArgs e)   //label Número de telefone
@@ -36,7 +36,7 @@ namespace CadaJSON
 
         private void textBox2_TextChanged(object sender, EventArgs e) // Caixa input texto número de telefone
         {
-
+            textBox2.MaxLength = 15; // Define o limite máximo de caracteres para o campo
         }
 
         private void label4_Click(object sender, EventArgs e)   //label Identificador
@@ -51,7 +51,23 @@ namespace CadaJSON
         
         private void button1_Click(object sender, EventArgs e)  // Botão salvar
         {
+            Class1 pessoas = new Class1
+            {
+                nome = textBox1.Text.Trim(),
+                telefone = textBox2.Text.Trim(),
+                identificador = textBox3.Text.Trim()
+            };
 
+            //Verifica se os espaços estão preenchidos
+            if (string.IsNullOrEmpty(pessoas.nome) ||
+                string.IsNullOrEmpty(pessoas.telefone) ||
+                string.IsNullOrEmpty(pessoas.identificador))
+            {
+                MessageBox.Show("Preencha todos os campos.");
+                return;
+            }
+
+            MessageBox.Show("Cadastro salvo com sucesso!");
         }
 
         private void button2_Click(object sender, EventArgs e) // Botão excluir
