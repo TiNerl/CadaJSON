@@ -30,7 +30,6 @@
         {
             dataGridView1 = new DataGridView();
             button1 = new Button();
-            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -38,10 +37,11 @@
             // 
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 71);
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(0, 0);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(776, 322);
+            dataGridView1.Size = new Size(800, 450);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -51,39 +51,26 @@
             button1.Name = "button1";
             button1.Size = new Size(99, 39);
             button1.TabIndex = 1;
-            button1.Text = "Atualizar";
+            button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(335, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(148, 45);
-            label1.TabIndex = 2;
-            label1.Text = "Listagem";
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(dataGridView1);
             Name = "Form3";
             Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private DataGridView dataGridView1;
         private Button button1;
-        private Label label1;
     }
 }

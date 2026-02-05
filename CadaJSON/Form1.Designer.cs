@@ -56,26 +56,26 @@
             // cadastroToolStripMenuItem
             // 
             cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            cadastroToolStripMenuItem.Size = new Size(122, 22);
+            cadastroToolStripMenuItem.Size = new Size(180, 22);
             cadastroToolStripMenuItem.Text = "Cadastro";
             cadastroToolStripMenuItem.Click += cadastroToolStripMenuItem_Click;
             // 
             // listagemToolStripMenuItem
             // 
             listagemToolStripMenuItem.Name = "listagemToolStripMenuItem";
-            listagemToolStripMenuItem.Size = new Size(122, 22);
+            listagemToolStripMenuItem.Size = new Size(180, 22);
             listagemToolStripMenuItem.Text = "Listagem";
             listagemToolStripMenuItem.Click += listagemToolStripMenuItem_Click;
             // 
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(119, 6);
+            toolStripSeparator1.Size = new Size(177, 6);
             // 
             // sairToolStripMenuItem
             // 
             sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            sairToolStripMenuItem.Size = new Size(122, 22);
+            sairToolStripMenuItem.Size = new Size(180, 22);
             sairToolStripMenuItem.Text = "Sair";
             sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
             // 
@@ -84,6 +84,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
+            BackgroundImage = Properties.Resources._1067423549193475670;
             ClientSize = new Size(800, 450);
             Controls.Add(menuStrip1);
             IsMdiContainer = true;
